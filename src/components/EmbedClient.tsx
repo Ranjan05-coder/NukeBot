@@ -1,5 +1,4 @@
 'use client'
-import { navigate } from 'next/dist/client/components/segment-cache/navigation'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 import { motion } from "motion/react"

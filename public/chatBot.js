@@ -78,7 +78,7 @@
       padding:8px;
       gap:6px;
     ">
-    <input id="chat-input" type:"text" 
+    <input id="chat-input" type="text" 
     style="
           flex:1;
           padding:8px 10px;
@@ -159,7 +159,7 @@ sendBtn.onclick=async ()=>{
     try {
     const response=await fetch(api_Url,{
         method:"POST",
-        headers:{"content-Type":"application/json"},
+        headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
             ownerId,message:text
         })
@@ -172,7 +172,7 @@ sendBtn.onclick=async ()=>{
 } catch (error) {
     console.log(error)
     messageArea.removeChild(typing)
-    addMessage(data|| "something went wrong","ai")
+    addMessage("something went wrong","ai")
 }
 }
 
